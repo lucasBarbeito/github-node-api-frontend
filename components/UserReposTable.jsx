@@ -15,7 +15,7 @@ const UserReposTable = ({user}) => {
     useEffect(() => {
       const fetchUser = async () => {
         const response = await fetch(
-          `https://lucbar-github-node-api.onrender.com/users/${user.login}/repos`
+          `https://lucbar-github-node-api.onrender.com/users/${user?.login}/repos`
         );
         const data = await response.json();
         setRepos(data.userRepos);

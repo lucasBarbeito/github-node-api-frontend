@@ -58,6 +58,13 @@ const UserDetails = ({ params }) => {
       </div>
 
       <UserReposTable user={user}/>
+      <div className="fixed bottom-4 right-4">
+        <button onClick={() => router.push('/')}> 
+          <a className="bg-gray-800 text-white py-2 px-4 rounded-full">
+            Return to Home Page
+          </a>
+        </button>
+      </div>
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import UserReposTable from "@/components/UserReposTable";
 
 const UserDetails = ({ params }) => {
   const [user, setUser] = useState(null);
@@ -55,6 +56,8 @@ const UserDetails = ({ params }) => {
           </div>
         </div>
       </div>
+
+      <UserReposTable user={user}/>
     </div>
   );
 };
